@@ -28,7 +28,7 @@ void readMics() {
     
        unsigned int signalMax = 0;
        unsigned int signalMin = 1024;
-       // collect data for 50 mS
+       // collect data for sampleWindow mS
        while (millis() - startMillis < sampleWindow)
        {
           sample = analogRead(i);
